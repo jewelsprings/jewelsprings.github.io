@@ -1,0 +1,6 @@
+Sitemap: https://www.jewelsprings.com/sitemap.xml
+
+User-agent: *
+Disallow: 
+Crawl-delay: 5
+Disallow: /readme
