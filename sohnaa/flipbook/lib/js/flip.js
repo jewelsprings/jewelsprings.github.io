@@ -29,7 +29,7 @@ var PRESENTATION = FLIP;
     autoEnableOutline: false,
     autoEnableThumbnail: false,
     overwritePDFOutline: false,
-    enableDownload: true,
+    enableDownload: false,
     duration: 800,
     direction: t.DIRECTION.LTR,
     pageMode: t.PAGE_MODE.AUTO,
