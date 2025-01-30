@@ -18,7 +18,8 @@
 }
 
 .df-container {
-    min-height: 320px;
+    min-height: 200px;
+/*    min-height: 320px; */
     background: no-repeat 70%;
     background-size: cover;
     width: 100%;
