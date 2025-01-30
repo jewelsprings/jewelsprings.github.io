@@ -1172,7 +1172,7 @@ section.linkAnnotation a .annotationLayer>a {
 }
 
 .df-sidemenu {
-    float: left;
+    float: bottom;
     width: 220px;
     height: auto !important;
     position: absolute !important;
