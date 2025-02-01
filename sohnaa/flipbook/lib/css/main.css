@@ -1060,7 +1060,6 @@ a.customLinkAnnotation:hover {
     opacity: 0.4;
 /*    border-color: transparent;
     background-color: #577b99 */
-    border: 1px solid black;
 }
 
 .annotationDiv,
