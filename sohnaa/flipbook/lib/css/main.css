@@ -1057,9 +1057,9 @@ section.linkAnnotation a:hover,
 a.linkAnnotation:hover,
 .highlightAnnotation:hover,
 a.customLinkAnnotation:hover {
-    opacity: .4;
+/*    opacity: .4;
     border-color: transparent;
-    background-color: #577b99
+    background-color: #577b99 */
 }
 
 .annotationDiv,
