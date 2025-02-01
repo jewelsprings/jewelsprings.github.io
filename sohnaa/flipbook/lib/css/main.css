@@ -1169,7 +1169,7 @@ section.linkAnnotation a .annotationLayer>a {
     background-color: rgba(170, 170, 170, 0.54);
     width: 40px;
     margin: 0 auto
-    top: 0 !important;
+    bottom: 0 !important;
 }
 
 .df-sidemenu {
