@@ -1049,18 +1049,22 @@ a.customLinkAnnotation,
 .customHtmlAnnotation,
 .customVideoAnnotation {
     background-color: transparent;
-/*    background-color: rgb(255, 247, 0);
-    opacity: 0.3 */
+/*    background-color: rgb(255, 247, 0); */
+    opacity: 0.3
+    transition: 1s ease;
 }
 
 section.linkAnnotation a:hover,
 a.linkAnnotation:hover,
 .highlightAnnotation:hover,
 a.customLinkAnnotation:hover {
-/*    opacity: .4;
-    border-color: transparent;
+    opacity: .4;
+/*    border-color: transparent;
     background-color: #577b99 */
-      padding: -4px -4px -4px -4px;
+    -webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
 }
 
 .annotationDiv,
