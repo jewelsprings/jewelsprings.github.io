@@ -1051,7 +1051,6 @@ a.customLinkAnnotation,
     background-color: transparent;
 /*    background-color: rgb(255, 247, 0); */
     opacity: 0.3;
-transition: 1s ease;
 }
 
 section.linkAnnotation a:hover,
@@ -1061,10 +1060,7 @@ a.customLinkAnnotation:hover {
     opacity: 0.4;
 /*    border-color: transparent;
     background-color: #577b99 */
--webkit-transform: rotateZ(-10deg);
--ms-transform: rotateZ(-10deg);
-transform: rotateZ(-10deg);
-transition: 1s ease;
+    border: 1px solid black;
 }
 
 .annotationDiv,
