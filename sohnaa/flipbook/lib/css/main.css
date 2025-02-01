@@ -1050,20 +1050,20 @@ a.customLinkAnnotation,
 .customVideoAnnotation {
     background-color: transparent;
 /*    background-color: rgb(255, 247, 0); */
-    opacity: 0.3
-    transition: 1s ease;
+    opacity: 0.3;
+transition: 1s ease;
 }
 
 section.linkAnnotation a:hover,
 a.linkAnnotation:hover,
 .highlightAnnotation:hover,
 a.customLinkAnnotation:hover {
-    opacity: .4;
+    opacity: 0.4;
 /*    border-color: transparent;
     background-color: #577b99 */
-    -webkit-transform: scale(0.8);
--ms-transform: scale(0.8);
-transform: scale(0.8);
+-webkit-transform: rotateZ(-10deg);
+-ms-transform: rotateZ(-10deg);
+transform: rotateZ(-10deg);
 transition: 1s ease;
 }
 
