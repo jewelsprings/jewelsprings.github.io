@@ -1049,8 +1049,8 @@ a.customLinkAnnotation,
 .customHtmlAnnotation,
 .customVideoAnnotation {
     background-color: transparent;
-/*    background-color: rgb(255, 247, 0); */
-    opacity: 0.3
+/*    background-color: rgb(255, 247, 0);
+    opacity: 0.3 */
 }
 
 section.linkAnnotation a:hover,
