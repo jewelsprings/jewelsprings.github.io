@@ -1051,6 +1051,7 @@ a.customLinkAnnotation,
     background-color: transparent;
 /*    background-color: rgb(255, 247, 0); */
     opacity: 0.3;
+    target: _blank !important;
 }
 
 section.linkAnnotation a:hover,
