@@ -935,14 +935,20 @@ c.updateSound();
       html: "<span>" + u.text.toggleThumbnails + "</span>",
     }).on("click", function () {
       var e = i(this);
-      if (n.target.thumbContainer) {
-        var t = n.target.thumbContainer;
-        t.toggleClass("df-sidemenu-visible");
-        e.toggleClass("df-active");
-      } else {
-        n.contentProvider.initThumbs();
-        e.toggleClass("df-active");
-      }
+if (n.target.thumbContainer) {
+  var t = n.target.thumbContainer;
+  t.toggleClass("df-sidemenu-visible");
+  e.toggleClass("df-active");
+
+  // Add mouse scroll event listener
+  t.on("wheel", function (event) {
+    event.preventDefault(); // Prevent default scrolling behavior
+    t[0].scrollTop += event.originalEvent.deltaY; // Scroll the container
+  });
+} else {
+  n.contentProvider.initThumbs();
+  e.toggleClass("df-active");
+}
       if (e.hasClass("df-active")) {
         e.siblings(".df-active").trigger("click");
       }
