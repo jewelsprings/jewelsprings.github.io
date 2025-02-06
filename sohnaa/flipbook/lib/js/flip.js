@@ -112,7 +112,7 @@ var PRESENTATION = FLIP;
     paddingRight: 20,
     paddingBottom: 30,
     enableAnalytics: false,
-    scrollWheel: true,
+    scrollWheel: false,
     onCreate: function (e) {},
     onCreateUI: function (e) {},
     onFlip: function (e) {},
