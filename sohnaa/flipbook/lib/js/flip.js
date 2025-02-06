@@ -27,7 +27,12 @@ var PRESENTATION = FLIP;
     search: false,
     height: "auto",
     autoEnableOutline: false,
-    autoEnableThumbnail: true,
+   // autoEnableThumbnail: false,
+    autoEnableThumbnail: (function() {
+  // Check if the device is not mobile
+  const isDesktop = !/(android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini)/i.test(navigator.userAgent);
+  return isDesktop; // Enable thumbnails only on desktop
+})(),
     overwritePDFOutline: false,
     enableDownload: false,
     duration: 800,
