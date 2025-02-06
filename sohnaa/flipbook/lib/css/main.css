@@ -1166,7 +1166,7 @@ section.linkAnnotation a .annotationLayer>a {
 
 .df-vrow>div {
     height: 20px;
-    background-color: rgba(170, 170, 170, 0.54);
+/*    background-color: rgba(170, 170, 170, 0.54); */
     width: 40px;
     margin: 0 auto
 }
