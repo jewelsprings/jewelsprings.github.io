@@ -1052,6 +1052,10 @@ a.customLinkAnnotation,
     background-color: transparent;
 /*    background-color: rgb(255, 247, 0); */
     opacity: 0.3;
+    display: inline-block; /* Ensure link wraps content */
+    padding: 25px; /* Expands clickable area by 25px on all sides (total 50px) */
+    margin: -25px; /* Keeps the link visually in the same place */
+    position: relative; /* Ensures it affects only the link */
 }
 
 section.linkAnnotation a:hover,
