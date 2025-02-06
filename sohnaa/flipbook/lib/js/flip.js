@@ -6808,15 +6808,5 @@ FLIP.parseLinks = function (e) {
         .trigger("click");
     });
   });
-
-// Open Link in New tab
-  document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        document.querySelectorAll("section.linkAnnotation a, a.linkAnnotation").forEach(function (link) {
-            link.setAttribute("target", "_blank");
-        });
-    }, 1000); // Ensure annotations are loaded before modifying them
-});
-
-  
+ 
 })(jQuery);
