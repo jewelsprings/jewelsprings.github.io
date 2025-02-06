@@ -27,7 +27,7 @@ var PRESENTATION = FLIP;
     search: false,
     height: "auto",
     autoEnableOutline: false,
-    autoEnableThumbnail: false,
+    autoEnableThumbnail: true,
     overwritePDFOutline: false,
     enableDownload: false,
     duration: 800,
