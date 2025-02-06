@@ -1040,7 +1040,8 @@ span.df-share-title {
 section.linkAnnotation a,
 .annotationDiv .buttonWidgetAnnotation.pushButton>a {
     display: block;
-    height: 100%
+    height: 100%;
+    width: 100%;
 }
 
 section.linkAnnotation a,
