@@ -3157,6 +3157,11 @@ c.updateSound();
           imageResourcesPath: n.imageResourcesPath,
           linkService: s.linkService,
         });
+// Open in links new Tab
+        // Ensure all linkAnnotation elements open in a new tab
+c.find("a.linkAnnotation").each(function () {
+    $(this).attr("target", "_blank");
+});
         if (s.options.annotationClass && s.options.annotationClass !== "") {
           c.find(" > section").addClass(s.options.annotationClass);
         }
