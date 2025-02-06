@@ -3157,11 +3157,6 @@ c.updateSound();
           imageResourcesPath: n.imageResourcesPath,
           linkService: s.linkService,
         });
-// Open in links new Tab
-        // Ensure all linkAnnotation elements open in a new tab
-c.find("a.linkAnnotation").each(function () {
-    $(this).attr("target", "_blank");
-});
         if (s.options.annotationClass && s.options.annotationClass !== "") {
           c.find(" > section").addClass(s.options.annotationClass);
         }
@@ -6813,4 +6808,15 @@ FLIP.parseLinks = function (e) {
         .trigger("click");
     });
   });
+
+// Open Link in New tab
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.querySelectorAll("section.linkAnnotation a, a.linkAnnotation").forEach(function (link) {
+            link.setAttribute("target", "_blank");
+        });
+    }, 1000); // Ensure annotations are loaded before modifying them
+});
+
+  
 })(jQuery);
