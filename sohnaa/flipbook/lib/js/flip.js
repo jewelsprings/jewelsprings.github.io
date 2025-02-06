@@ -758,20 +758,33 @@ var PRESENTATION = FLIP;
       title: u.text.toggleHelp,
       html: "<span>" + u.text.toggleHelp + "</span>",
     }).on("click", function () {});
+
+    
     var y = (c.sound = i(h.div, {
-      class: r + " " + a + "-sound " + u.icons["sound"],
-      title: u.text.toggleSound,
-      html: "<span>" + u.text.toggleSound + "</span>",
-    }).on("click", function () {
-      u.soundEnable = !u.soundEnable;
-      c.updateSound();
-    }));
-    c.updateSound = function () {
-      if (u.soundEnable == false || u.soundEnable == "false")
-        y.addClass("Enabled");
-      else y.removeClass("disabled");
-    };
-    c.updateSound();
+  class: r + " " + a + "-sound " + u.icons["sound"],
+  title: u.text.toggleSound,
+  html: "<span>" + u.text.toggleSound + "</span>",
+}).on("click", function () {
+  u.soundEnable = !u.soundEnable;
+  c.updateSound();
+}));
+
+// Set sound to enabled by default
+u.soundEnable = true;
+
+c.updateSound = function () {
+  if (u.soundEnable) {
+    y.removeClass("disabled").addClass("enabled");
+  } else {
+    y.addClass("disabled").removeClass("enabled");
+  }
+};
+
+// Initialize with sound enabled
+c.updateSound();
+
+
+    
     function C(e) {
       c.search.removeClass("df-active");
     }
