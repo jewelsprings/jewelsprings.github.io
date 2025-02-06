@@ -2202,7 +2202,7 @@ c.updateSound();
       s.imageViewport = { height: 297, width: 210, scale: 1 };
       s.bookSize = { height: 297, width: 210 };
       s.zoomViewport = { height: 297, width: 210 };
-      s.thumbsize = 64;
+      s.thumbsize = 128;
       s.cacheIndex = 1024;
       s.cache = [];
       s.pageRatio = o.pageRatio || s.viewport.width / s.viewport.height;
