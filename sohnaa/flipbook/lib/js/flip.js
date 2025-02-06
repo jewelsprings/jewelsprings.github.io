@@ -27,7 +27,7 @@ var PRESENTATION = FLIP;
     search: false,
     height: "auto",
     autoEnableOutline: false,
-   // autoEnableThumbnail: false,
+  //  autoEnableThumbnail: false,
     autoEnableThumbnail: (function() {
   // Check if the device is not mobile
   const isDesktop = !/(android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini)/i.test(navigator.userAgent);
@@ -935,20 +935,14 @@ c.updateSound();
       html: "<span>" + u.text.toggleThumbnails + "</span>",
     }).on("click", function () {
       var e = i(this);
-if (n.target.thumbContainer) {
-  var t = n.target.thumbContainer;
-  t.toggleClass("df-sidemenu-visible");
-  e.toggleClass("df-active");
-
-  // Add mouse scroll event listener
-  t.on("wheel", function (event) {
-    event.preventDefault(); // Prevent default scrolling behavior
-    t[0].scrollTop += event.originalEvent.deltaY; // Scroll the container
-  });
-} else {
-  n.contentProvider.initThumbs();
-  e.toggleClass("df-active");
-}
+      if (n.target.thumbContainer) {
+        var t = n.target.thumbContainer;
+        t.toggleClass("df-sidemenu-visible");
+        e.toggleClass("df-active");
+      } else {
+        n.contentProvider.initThumbs();
+        e.toggleClass("df-active");
+      }
       if (e.hasClass("df-active")) {
         e.siblings(".df-active").trigger("click");
       }
@@ -2213,7 +2207,7 @@ if (n.target.thumbContainer) {
       s.imageViewport = { height: 297, width: 210, scale: 1 };
       s.bookSize = { height: 297, width: 210 };
       s.zoomViewport = { height: 297, width: 210 };
-      s.thumbsize = 128;
+      s.thumbsize = 64;
       s.cacheIndex = 1024;
       s.cache = [];
       s.pageRatio = o.pageRatio || s.viewport.width / s.viewport.height;
