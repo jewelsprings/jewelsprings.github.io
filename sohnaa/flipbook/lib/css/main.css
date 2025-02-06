@@ -1170,6 +1170,7 @@ section.linkAnnotation a .annotationLayer>a {
     width: 40px;
     margin: 0 auto;
     font-size: 10px; /* Reduced font size */
+    color: grey; /* Added font color */
 }
 
 .df-sidemenu {
